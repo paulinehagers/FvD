@@ -9,7 +9,10 @@ button, summary {
 	cursor: pointer;
 }
 
-
+img{
+	display: block;
+	width: 100%;
+}
 
 
 
@@ -18,8 +21,11 @@ button, summary {
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
+	--color-text:#1a3065;
+	--color-text2: rgb(255, 255, 255);
 	--color-background:#eee;
+	--color-background2: #1a3065;
+	
 }
 
 
@@ -32,3 +38,277 @@ button, summary {
 
 /* jouw code */
 
+
+/*header homepage */
+
+#nav-homepage {
+	display: flex;
+	flex-direction: column;
+}
+
+#navigatie {
+	display: flex;
+	flex-direction: row;
+	position: fixed;
+}
+
+#nav-homepage img {
+	height: 7em;
+	width: 9em;
+	margin-top: -2.4em;
+	margin-left: -.5em;
+}
+
+#nav-homepage li {
+	list-style-type: none;
+}
+
+#nav-homepage li a{
+	text-decoration: none;
+	color: black;
+}
+
+#nav-homepage h1{
+	text-align: center;
+	justify-content: center;
+	margin-top: 5.5em;
+	color: var(--color-text);
+}
+
+#nav-homepage h3{
+	text-align: center;
+	justify-content: center;
+	color: var(--color-text);
+}
+
+#holiday-swap {
+	padding: 1.5em
+}
+
+#holiday-swap a{
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	display: flex;
+	flex-direction: column;
+	background-color: #ffea80;
+	border-radius: 1.5em;
+	padding: .8em;
+	margin: .8em;
+	color: var(--color-text);
+}
+
+
+/* section bottles kg en happy fish */
+
+#bottles-kg-happyfish {
+	background-color: #f4fdff;
+	width: 100%;
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+}
+
+#bottles-kg-happyfish img {
+	height: 3em;
+	width: 3em;
+}
+
+#bottles-kg-happyfish li {
+	list-style-type: none;
+	color: var(--color-text);
+	margin-left: -1em;
+}
+
+
+	
+/* section swap the crap */
+
+#swap-the-crap {
+	background-color: var(--color-background2);
+	width: 100%;
+}
+
+#swap-the-crap img {
+	padding-top: 2em;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+#swap-the-crap h3 {
+	color: var(--color-text2);
+	margin-left: .8em;
+	margin-top: -.02em;
+}
+
+#swap-the-crap p {
+	color: var(--color-text2);
+	padding-left: 0.8em;
+	padding-right: 0.8em;
+	margin-bottom: 1em;
+}
+
+#swap-the-crap a {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	border-radius: 1.5em;
+	padding: .8em;
+	margin: .8em;
+}
+
+/* section gift personalised branded doppers */
+
+#personalised-gifts {
+	background-color: #f4fdff;
+}
+
+#personalised-gifts h4 {
+	margin-left: .8em;
+	color: var(--color-text);
+	margin-top: -1em;
+}
+
+#personalised-gifts h3 {
+	margin-left: .6em;
+	color: var(--color-text);
+}
+
+#personalised-gifts p {
+	margin-left: .8em;
+	color: var(--color-text);
+	width: 90%;
+	
+}
+
+#customer-tool-link {
+	text-align: center;
+	text-decoration: none;
+	background-color: #ffea80;
+	color: var(--color-text);
+	border-radius: 1.5em;
+	padding: 1em;
+	margin: 0.8em;
+	
+}
+
+/* section shop dopper steel */ 
+
+#shop-dopper-steel {
+	background-color: #97d7db;
+	margin-top: 1.5em;
+	margin-left: -5em;
+	margin-right: 1em;
+	
+}
+
+#shop-dopper-steel h6 {
+	color: var(--color-text);
+	margin-left: 5.5em;
+	font-size: 1.2em;
+	width: 70%;
+}
+
+#shop-dopper-steel a {
+	text-align: center;
+	text-decoration: none;
+	background-color: #ffea80;
+	color: var(--color-text);
+	border-radius: 1.5em;
+	padding: 1em;
+	margin-left: 6.6em;
+	
+}
+
+/* section customise your bottle */
+
+#customise-your-bottle {
+	background-color: #97d7db;
+	margin-top: -.5em;
+	margin-right: -5em;
+	margin-left: 1em;
+}
+
+#customise-your-bottle h6 {
+	color: var(--color-text);
+	margin-left: 1em;
+	font-size: 1.2em;
+	width: 70%;
+}
+
+#customise-your-bottle a {
+	text-align: center;
+	text-decoration: none;
+	background-color: #ffea80;
+	color: var(--color-text);
+	border-radius: 1.5em;
+	padding: 1em;
+	margin-left: 1.2em;
+}
+
+#video img {
+	margin-top: 2em;
+}
+
+#video h1 {
+	color: var(--color-text2);
+	margin-top: -2em;
+}
+
+/* section the drops in our wave so far */
+
+#drops-in-our-wave {
+	background-color: var(--color-background2);
+}
+
+#drops-in-our-wave h1 {
+	font-size: 3em;
+	text-align: center;
+	padding: 1em;
+}
+
+#aantal-wave-drops {
+	font-size: 5em;
+	text-align: center;
+	margin-top: -1em;
+} 
+
+#drops-in-our-wave a {
+	justify-content: center;
+	text-align: center;
+	text-decoration: none;
+	background-color: white;
+	color: var(--color-text);
+	border-radius: 1.5em;
+	padding: 1em;
+}
+
+
+/* news splash */
+
+#news-splash {
+	background-color: #f4fdff;
+}
+
+#news-splash h2 {
+	text-align: center;
+	padding: 1em;
+	font-size: 2em;
+	color: var(--color-text);
+}
+
+#news-splash p {
+	text-align: center;
+	color: var(--color-text);
+	margin-top: -2.5em;
+	margin-bottom: 5em;
+}
+
+
+
+
+
+input{
+	border: none;
+	border-bottom: 1px solid grey;
+}

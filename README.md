@@ -13,7 +13,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Jij
 
 <details open>
-  <summary>Ik ben Pauline, woon in Amsterdam en ben 22 jaar oud. Ik vind het leuk om creatief te zijn </summary>
+  <summary>Ik ben Pauline, woon in Amsterdam en ben 22 jaar oud. Ik vind het leuk om creatief te zijn</summary>
 
   ### Auteur:
   Pauline Hagers 
@@ -74,33 +74,46 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Toegankelijkheidstest 1/2 (week 1)
 
 <details>
-  <summary>uitwerken na test in 1e werkgroep</summary>
+  <summary>Tijdens de les hebben we verschillende testen gedaan waarbij je kon zien/ horen/ voelen hoe een website zou werken met een beperking</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
+  De dingen die mij opvielen tijdens het testen:
+  - Sommige buttons waren redelijk klein waardoor je met die shocks moeilijker die button kon klikken
+  - De screenreader is nogal verwarrend, bij het menu is er een dropdown menu en ipv dat hij de woorden zegt zegt hij "link, link, link"
+  - de screenreader leest ook eerts het hele menu op voordat hij de pagina voorleest, duurt lang
 
   #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  Met de screenreader is er een voice over die de website voor je voorleest. Soms zegt de voice over niet de woorden die er staan.
+  Ook leest hij eerst het hele menu op voordat je naar de inhoud van dat scherm gaat wat lang duurt.
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  oplossing:
+  - shortcut links toevoegen
+  - een duidelijke titel overal zetten
 
 
   #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Oplossingen:
+  - 
 
 
   #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  Als je zo'n apparaat aan je geplakt had ging je arm veel bewegen waardoor het lastig was om te navigeren. Met de elastiekjes viel het mee
+  maar was het alsnog irritant om te navigeren.
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Oplossingen:
+  - Buttons eventueel groter maken zodat je een groter veld hebt om te klikken
 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  Hier hadden we gekeken hoe de website eruit zou zien als iemand slechtziend is, kleurenblind is of in light/dark mode. 
+  Ik had ook een bril opgedaan waarbij je door een klein gaatje moest kijken waarbij je eigenlijk amper iets ziet. 
+  Ook heb ik een bril opgehad waarbij alles wazig was.
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Oplossingen:
+  - Grotere lettertype gebruiken
+  - Betere contrast tussen de kleuren
 
 </details>
 
@@ -109,16 +122,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Breakdownschets (week 1)
 
 <details>
-  <summary>uitwerken na afloop 2e werkgroep</summary>
+  <summary>Dit zijn de breakdownschetsen van de homepage en shop pagina</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdownhomepage.jpg" width="375px" alt="breakdown van de homepage">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/breakdownshop.jpg" width="375px" alt="breakdown van de shop pagina">
 
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
