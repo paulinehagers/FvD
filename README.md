@@ -140,20 +140,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Voortgang 1 (week 2)
 
 <details>
-  <summary>uitwerken voor 1e voortgang</summary>
+  <summary>ik heb eerst een breakdown schets gemaakt van de homepage en shop pagina. Daarna heb ik de html geschreven voor de homepage en ben ik al een beetje bezig geweest met de css.</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  de html ging beter dan verwacht maar had alsnog moeite met hoe ik sommige dingen moest coderen. Met de css heb ik code gebruikt die ik nog weet van jaar 1 alleen kan het wat beter geschreven worden voor mijn gevoel. Ook zijn er nog best wat dingen die ik niet weet hoe het gecodeerd moet worden
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | student 1                           | student 2                            | student 3    | student 4        |
+  | ---                                 | ---                                  | ---          | ---              |
+  | fieldset/forum                      | verschillende kleuren in een tekst   | en ik dit    | en dan ik dat    |
+  | gebruik van icons ipv afbeeldingen  | links vormgeven                      | nog een punt | dit wil ik zeker |
+  |                                     | afbeeldingen knippen                 | ...          | ...              |
 
 
   ### Verslag van meeting
