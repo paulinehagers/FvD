@@ -159,10 +159,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - ik moest sommige buttons veranderen naar een link in html
+  - ik moest in mn footer geruik van details summary ipv button
+  - de foto's in de footer van ideal, mastercard, visa, etc kon ik in een ul zetten
+  - De css kon netter geschreven worden ipv overal id's te gebruiken
 
 </details>
 
