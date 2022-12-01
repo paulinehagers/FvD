@@ -173,20 +173,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Voortgang 2 (week 3)
 
 <details>
-  <summary>uitwerken voor 2e voortgang</summary>
+  <summary>Afgelopen week heb ik voornamelijk gewerkt aan de css van mijn homepage wat redelijk goed ging. Ik heb af en toe om hulp gevraagd bij de studenten assistent en dat ging prima.</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Er waren een paar dingen in de css/ javascript die ik wat moeilijker vond. Bijvoorbeeld bij het stijlen van een link, de juiste font family krijgen, een werkende hamburger menu, een foto groter maken zodat het over de lijnen verdwijnt.
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | student 1                                             | student 2          | student 3    | student 4        |
+  | in de footer de details stijlen                       | ---                | ---          | ---              |
+  | wat kan in de plaats van een <br>                     | en dit             | en ik dit    | en dan ik dat    |
+  | links in het midden zetten                            | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | in de footer bij de input onder de rocksign en p      | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
