@@ -159,6 +159,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
+  feedbakc gekregen door Yeun Chin Zhang
+
   - ik moest sommige buttons veranderen naar een link in html
   - ik moest in mn footer geruik van details summary ipv button
   - de foto's in de footer van ideal, mastercard, visa, etc kon ik in een ul zetten
@@ -192,10 +194,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  Feedback gekregen van Yara Prins
+
+  - probeer er een logische volgorde van te maken ('belangrijkste' bovenaan en bvb een img onderaan) in de css zet je bij de parents dan display:flex en flex-direction: column. in de children zet je dan de order
+  - id's konden weggehaald worden door gebruikt te maken van > in de css
+  - de br kan veranderd worden naar een span
+  - script kan onderaan gezet worden ipv bovenaan
 
 </details>
 
@@ -209,7 +213,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 8e werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  - Ik had met het toetsenbord een beetje problemen 
 
   #### Screenreader
   Hier korte omschrijving (met indien nodig afbeeldingen)
@@ -218,54 +222,52 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  1. Met het toetsenbord had ik problemen in mijn nav waardoor hij van het logo gelijk sprong naar de li's ipv het hamburger menu.
+  2. Zodra ik de hamburgermenu opende zou hij eerst op het kruisje zijn ipv op de eertse li
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Oplossing:
+  1. dit heb ik aangepast door de button van de hamburger menu boven de nav te zetten. Zo springt hij van het logo naar het hamburger menu.
+  2. Hier heb ik de button van het kruisje onder de li's gezet.
 
 
   #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Ik heb mijn middelvinger en ringvingeraan elkaar vast gebonden om te kijken hoe ik door mijn website ging, wat prima ging
 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  1. Met de wazige bril waren de grotere teksten makkelijk te lezen alleen de kleinere teksten niet. 
+  2. Met de kleurenblind bril was alles nog goed te zien en lezen alleen veranderde hier en daar een paar kleurtjes.
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  1. Met de wazige bril kan het opgelost worden door een optie erbij toe te voegen waarbij de lettertype groot wordt
 
 </details>
-
-
-
 
 
 ## Voortgang 3 (week 4)
 
 <details>
-  <summary>uitwerken voor 3e voortgang</summary>
+  <summary>afgelopen week ben ik voornamelijk bezig geweest met mijn shop pagina. Deze ging iets sneller dan de homepage</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | Pauline                           | student 2          | student 3    | student 4        |
+  | De eerste section van de main     | ---                | ---          | ---              |
+  | kruisje in het uitklapmenu staat verkeerd    | en dit             | en ik dit    | en dan ik dat    |
+  |                                   | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
+  Pip heeft me zeer goed kunnen helpen en heeft al mijn vragen kunnen beantwoorden 
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - door de website tabben is opgelosten
+  - De eerste 2 fotos op de shoppage staan ook goed
+  - kruisje staat nu goed
 
 </details>
 
@@ -279,19 +281,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/index.html.png" width="375px" alt="uitkomst opdracht 1">
+  <img src="readme-images/shop.html.png" width="375px" alt="uitkomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  De html schrijven ging redelijk goed en de meeste code van css ging ook wel okay. Ik heb de afgelopen maand extreem veel geleerd, voornamelijk met het css zoals grid, hamburger menu, rotate, z-index, root etc 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
-
+  <img src="readme-images/root.png" width="375px" alt="top">
+  <img src="readme-images/grid.png" width="375px" alt="top">
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+Ik heb mijn best gedaan om de website responsive te maken alleen is het niet echt gelukt. Heel dingen ging uiteindelijk ook schuiven waardoor ik geen duidelijk overzicht meer had. Als ik hem repsonsive wilde maken moest ik ook mijn html een beetje veranderen waardoor de css niet helemaal meer klopte. Dus om te voorkomen dat mijn website er slecht uit ging zien ben ik maar gestopt.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/index2.png" width="375px" alt="bummer">
 </details>
 
 
@@ -305,8 +308,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. https://css-tricks.com/snippets/css/complete-guide-grid/ (justify-items: center)
+  2. https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column (grid-column: 1/ span 2)
+  3. https://travishorn.com/responsive-grid-in-2-minutes-with-css-grid-layout-4842a41420fe (grid-template-columns: repeat(2, 1fr)
 
 </details>

@@ -13,13 +13,17 @@ button, summary {
 	cursor: pointer;
 }
 
-img{
+img {
 	display: block;
 	width: 100%;
 }
 
+ul{
+	padding: 0;
+}
+
 /******/
-/*font*/
+/*FONT*/
 /******/
 
 @font-face {
@@ -44,8 +48,14 @@ img{
 	/* startje */
 	--color-text:#1a3065;
 	--color-text2: rgb(255, 255, 255);
+	--color-text3: #f8de60;
 	--color-background:#eee;
 	--color-background2: #1a3065;
+	--color-background3: white;
+	--color-background4: #ffea80;
+	--color-background5: #f8de60;
+	--color-background6: #f4fdff;
+	--text-decoration-color: #ffea80;
 }
 
 
@@ -53,9 +63,11 @@ img{
 /* JOUW STYLING */
 /****************/
 
-/******************/
-/*header homepage */
-/******************/
+/*******************/
+/*******************/
+/* HEADER HOMEPAGE */
+/*******************/
+/*******************/
 
 .homepage header {
 	display: flex;
@@ -69,25 +81,30 @@ img{
     background-blend-mode: soft-light;
 }
 
-.homepage header section:first-of-type {
+header section:first-of-type.is-down {
+	background-color: var(--color-background3);
+	padding: 1em;
+}
+
+header > section:first-of-type {
 	display: flex;
 	justify-content: space-between;
 	flex-direction: row;
+	padding: 1em;
 	position: fixed;
 	right: 0;
 	left: 0;
 }
 
-.homepage header section a img {
-	height: 8em;
-	width: 10em;
-	margin-top: -2.2em;
-	margin-left: .8em;
+header section a img {
+	height: 1.7em;
+	width: auto;
 }
 
-.homepage header section nav {
-	background-color: white;
+header section nav {
+	background-color: var(--color-background);
 	position: fixed;
+	padding-left: 2em;
 	left: 0;
 	right: 0;
 	top: 0;
@@ -96,38 +113,66 @@ img{
 	transform: translateX(100%);
 }
 
+/*******************************************************/
+/* Geholpen door Pip (kruisje op de juiste plek zetten */
+/*******************************************************/
+
+header section nav button {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
 header section nav.toonMenu {
 	transform: translateX(0);
 	height: 100%;
 }
 
-.homepage header section nav ul li {
+header section nav ul {
+	padding-top: 2em;
+}
+
+header section nav ul li {
 	list-style-type: none;
 	font-size: 2em;	
 	justify-content: left;
-
+	padding-top: .7em;
 }
 
-.homepage header section nav ul li a{
+header section nav ul li a{
 	text-decoration: none;
 	color: var(--color-text);
+	font-family: Gilroy-bold, sans-serif;
+}
+
+header section nav ul li a:hover {
+	text-decoration: underline;
+	text-decoration-color: var(--text-decoration-color);
+	text-decoration-thickness: .2em;
 }
 
 /******************/
-/* hamburger menu */
+/******************/
+/* HAMBURGER MENU */
+/******************/
 /******************/
 
-.homepage header section:first-of-type button{
-	height: 2.7rem;
-	width: 2.7rem;
+header section:first-of-type button{
+	height: 3em;
+	width: 3em;
 }
 
-/*********************/
-/* the holdiday swap */
-/*********************/
+/********************/
+/********************/
+/* THE HOLIDAY SWAP */
+/********************/
+/********************/
 
 .homepage header section:nth-of-type(2) {
-	padding: 1.5em
+	padding: 1.5em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .homepage header section:nth-of-type(2) h1{
@@ -136,7 +181,7 @@ header section nav.toonMenu {
 	margin-top: 4em;
 	color: var(--color-text);
 	font-family: Gilroy-bold, sans-serif;
-	font-size: 2rem;
+	font-size: 2em;
 }
 
 .homepage header section:nth-of-type(2) h3{
@@ -145,18 +190,23 @@ header section nav.toonMenu {
 	margin-top: -.5em;
 	color: var(--color-text);
 	font-family: Gilroy-bold, sans-serif;
+	font-size: 1.2em;
+	max-width: 90%;
 }
 
-.homepage header section:nth-of-type(2) a{
+.homepage header section:nth-of-type(2) section {
+	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+}
+
+.homepage header section:nth-of-type(2) a {
 	text-decoration: none;
 	text-transform: uppercase;
 	font-family: Gilroy-semibold, sans-serif;
-	font-size: .8rem;
-	display: flex;
-	flex-direction: column;
-	background-color: #ffea80;
+	font-size: .8em;
+	background-color: var(--text-decoration-color);
 	border-radius: 2em;
 	padding: 1.5em;
 	margin: .8em;
@@ -164,70 +214,108 @@ header section nav.toonMenu {
 	color: var(--color-text);
 }
 
+.homepage header section:nth-of-type(2) a:hover {
+	background-color: var(--color-background5);
+}
+
+.homepage header section:nth-of-type(2) a:focus {
+	background-color: var(--color-background5);
+}
+
 /************************************/
-/* section bottles kg en happy fish */
+/************************************/
+/* SECTION BOTTLES KG EN HAPPY FISH */
+/************************************/
 /************************************/
 
 .homepage main {
 	overflow: hidden;
 }
 
-.homepage main section:first-of-type{
-	background-color: #f4fdff;
+.homepage main > section:first-of-type{
+	background-color: var(--color-background6);
 	padding-left: 1.2em;
 	padding-right: 1.7em;
 	padding-top: 1.8em;
 	padding-bottom: 1.8em;
 }
 
+.homepage main > section:nth-of-type(6) > section:first-of-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    align-items: center;
+}
+
+.homepage main section:first-of-type ul {
+	display: grid;
+}
+
 .homepage main section:first-of-type ul li {
 	list-style-type: none;
 	color: var(--color-text);
-	margin-left: -1.5em;
-	margin-bottom: 2em;
+	margin: 0 auto 2em auto;
+	max-width: 90%;
 	display: flex;
 	flex-wrap: wrap;
 	gap: .4em;
 	font-family: Gilroy-bold, sans-serif;
 }
 
-.homepage main section:first-of-type h2::first-line {
-	font-size: 3rem;
+.homepage main section:first-of-type h2 {
+	display: flex;
+	flex-direction: column;
+}
+
+/************************************************/	
+/* geholpen door studenten assistent Yara Prins */
+/************************************************/	
+
+.homepage main section:first-of-type span {
+	font-size: 2em;
 }
 
 .homepage main section:first-of-type ul li img {
-	height: 3.9em;
-	width: 3.9em;
-	margin-top: 0.7em;
+	height: 5em;
+	width: 5em;
+	margin-top: 1em;
 }
 
 .homepage main section:first-of-type ul li p {
 	margin-top: -1em;
 	font-family: Gilroy-semibold, sans-serif;
-	font-size: 1rem;
+	font-size: 1em;
 }
 
-/**************************/	
-/* section swap the crap */
-/**************************/	
+/*************************/	
+/*************************/	
+/* SECTION SWAP THE CRAP */
+/*************************/	
+/*************************/
 
-.homepage main section:nth-of-type(2) {
+.homepage main > section:nth-of-type(2) {
 	background-color: var(--color-background2);
 	width: 100%;
 	padding-bottom: 1em;
 }
 
-.homepage main section:nth-of-type(2) img {
+.homepage main > section:nth-of-type(2) img {
 	padding-top: 2em;
 	padding-left: 2em;
 	padding-right: 2em;
+}
+
+.homepage main > section:nth-of-type(2) section {
+	background-color: var(--color-background2);
+	padding: 0;
 }
 
 .homepage main section:nth-of-type(2) h3 {
 	color: var(--color-text2);
 	margin-left: 1em;
 	font-family: Gilroy-bold, sans-serif;
-	font-size: 1.8rem;
+	font-size: 1.8em;
 }
 
 .homepage main section:nth-of-type(2) p {
@@ -243,28 +331,51 @@ header section nav.toonMenu {
 	display: flex;
 	flex-direction: column;
 	font-family: Gilroy-semibold, sans-serif;
-	font-size: .8rem;
+	color: var(--color-text);
+	font-size: .8em;
 	text-decoration: none;
 	text-transform: uppercase;
-	background-color: white;
+	background-color: var(--color-background);
 	border-radius:2em;
 	padding: 1.5em;
-	margin-left: 3em;
+	margin-left: 2.5em;
 	margin-bottom: 1.2em;
 	width: fit-content;
 }
 
-/*********************************************/	
-/* section gift personalised branded doppers */
-/*********************************************/	
+.homepage main section:nth-of-type(2) a:hover {
+	background-color: var(--color-background5);
+}
 
-.homepage section:nth-of-type(3) section:first-of-type {
-	background-color: #f4fdff;
+.homepage main section:nth-of-type(2) a:visited {
+	color: var(--color-text);
+}
+
+/*********************************************/	
+/*********************************************/	
+/* SECTION GIFT PERSONALISED BRANDED DOPPERS */
+/*********************************************/	
+/*********************************************/
+
+.homepage section:nth-of-type(3) > section:first-of-type {
+	background-color: var(--color-background6);
+	padding: 1em;
+}
+
+.homepage section:nth-of-type(3) > section:first-of-type img {
+	height: 27em;
+	width: auto;
+	margin: auto;
+}
+
+.homepage section:nth-of-type(3) > section:first-of-type section:first-of-type {
+	display: flex;
+	flex-direction: column;
 }
 
 .homepage section:nth-of-type(3) section:first-of-type h4 {
 	margin-left: 1em;
-	font-size: .8rem;
+	font-size: .8em;
 	font-family: Gilroy-regular, sans-serif;
 	color: var(--color-text);
 	margin-top: -.5em;
@@ -275,7 +386,7 @@ header section nav.toonMenu {
 	margin-left: .4em;
 	margin-top: -.2em;
 	font-family: Gilroy-bold, sans-serif;
-	font-size: 2rem;
+	font-size: 2em;
 	color: var(--color-text);
 }
 
@@ -286,13 +397,27 @@ header section nav.toonMenu {
 	font-family: Gilroy-semibold, sans-serif;
 }
 
-#customer-tool-link {
+.homepage section:nth-of-type(3) section:first-of-type a:hover {
+	text-decoration: underline var(--text-decoration-color);
+	text-decoration-thickness: .2em;
+	color: var(--color-text);
+}
+
+.homepage section:nth-of-type(3) section:first-of-type a:visited {
+	color: var(--color-text);
+}
+
+/******************************************************************************************************************/
+/* studenten assistent Yara Prins had aangegeven om > te gebruiken om de a te pakken die gelijk in de section zit */
+/******************************************************************************************************************/
+
+.homepage section:nth-of-type(3) section:first-of-type > a {
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
-	background-color: #ffea80;
+	background-color: var(--color-background4);
 	font-family: Gilroy-semibold, sans-serif;
-	font-size: .8rem;
+	font-size: .8em;
 	color: var(--color-text);
 	border-radius: 2em;
 	padding: 1.5em;
@@ -300,48 +425,75 @@ header section nav.toonMenu {
 	width: fit-content;
 }
 
-/*****************************/	
-/* section shop dopper steel */
-/*****************************/	 
+.homepage section:nth-of-type(3) section:first-of-type > a:hover {
+	background-color: var(--color-background5);
+	text-decoration: none;
+}
 
-.homepage section:nth-of-type(3) section:nth-of-type(2) {
+/*****************************/	
+/*****************************/	
+/* SECTION SHOP DOPPER STEEL */
+/*****************************/	 
+/*****************************/
+
+.homepage section:nth-of-type(3) > section:nth-of-type(2) {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--color-background6);
+	padding-bottom: 3em;
+}
+
+.homepage section:nth-of-type(3) > section:nth-of-type(2) section:first-of-type {
 	background-color: #97d7db;
-	margin-top: 1.5em;
-	margin-left: -2em;
-	margin-right: 1em;
+	margin-left: -3em;
+	margin-right: 2em;
+	padding-bottom: 1em;
+}
+
+.homepage section:nth-of-type(3) > section:nth-of-type(2) section:nth-of-type(2) {
+	background-color: #97d7db;
+	margin-left: 2em;
+	margin-top: -2em;
+	margin-right: -3em;
 	padding-bottom: 1em;
 }
 
 .homepage section:nth-of-type(3) section:nth-of-type(2) h6 {
 	color: var(--color-text);
 	font-family: Gilroy-bold, sans-serif;
-	font-size: 1.2rem;
+	font-size: 1.2em;
 	margin-left: 5.5em;
 	width: 70%;
 }
 
 .homepage section:nth-of-type(3) section:nth-of-type(2) img {
 	padding: 0;
+	margin: 0;
 }
 
 .homepage section:nth-of-type(3) section:nth-of-type(2) a {
 	text-align: center;
 	text-decoration: none;
-	background-color: #ffea80;
+	background-color: var(--color-background4);
 	font-family: Gilroy-semibold, sans-serif;
-	font-size: .8rem;
+	font-size: .8em;
 	color: var(--color-text);
 	border-radius: 2em;
 	padding: 1.5em;
 	margin-top: -1em;
 	margin-left: 8.3em;
 	margin-bottom: 4em;
-	
+}
+
+.homepage section:nth-of-type(3) section:nth-of-type(2) a:hover {
+	background-color: var(--color-background5);
 }
 
 /*********************************/	
-/* section customise your bottle */
 /*********************************/	
+/* SECTION CUSTOMISE YOUR BOTTLE */
+/*********************************/	
+/*********************************/
 
 .homepage section:nth-of-type(3) section:nth-of-type(3) {
 	background-color: #97d7db;
@@ -354,7 +506,7 @@ header section nav.toonMenu {
 .homepage section:nth-of-type(3) section:nth-of-type(3) h6 {
 	color: var(--color-text);
 	font-family: Gilroy-bold, sans-serif;
-	font-size: 1.2rem;
+	font-size: 1.2em;
 	margin-left: 1em;
 	width: 70%;
 }
@@ -363,9 +515,9 @@ header section nav.toonMenu {
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
-	background-color: #ffea80;
+	background-color: var(--color-background4);
 	font-family: Gilroy-semibold, sans-serif;
-	font-size: .8rem;
+	font-size: .8em;
 	color: var(--color-text);
 	border-radius: 2em;
 	padding: 1.5em;
@@ -374,12 +526,19 @@ header section nav.toonMenu {
 	width: fit-content;
 }
 
-/******************/
-/* video gedeelte */
-/******************/
+.homepage section:nth-of-type(3) section:nth-of-type(3) a:hover {
+	background-color: var(--color-background5);
+}
+
+/******************/	
+/******************/	/*******************************************************************/
+/* VIDEO GEDEELTE */	/* geholpen door studenten assistent Pip Harsveld en docent Robert */
+/******************/	/*******************************************************************/
+/******************/	
 
 .homepage section:nth-of-type(4) {
 	position: relative;
+	z-index: -1;
 }
 
 .homepage section:nth-of-type(4) a {
@@ -396,7 +555,6 @@ header section nav.toonMenu {
 }
 
 .homepage section:nth-of-type(4) > img:first-of-type {
-	margin-top: 2em;
 	height: 50em;
 	width: auto;
 	transform: translate(-42em, 0);
@@ -412,29 +570,38 @@ header section nav.toonMenu {
 }
 
 /****************************************/	
-/* section the drops in our wave so far */
 /****************************************/	
+/* SECTION THE DROPS IN OUR WAVE SO FAR */
+/****************************************/	
+/****************************************/
 
 .homepage section:nth-of-type(5) {
 	background-color: var(--color-background2);
 	padding-bottom: 3em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .homepage section:nth-of-type(5) h2 {
 	font-family: Gilroy-bold, sans-serif;
-	font-size: 3rem;
+	font-size: 3em;
 	text-align: center;
 	color: var(--color-text2);
 	justify-content: center;
-	padding-top: 1em;
 	padding-left: .8em;
 	padding-right: .8em;
 	width: 100%;
 }
 
+.homepage main > section:nth-of-type(5) h2 em {
+	color: var(--color-text3);
+	font-style: normal;
+}
+
 .homepage section:nth-of-type(5) h3 {
 	font-family: Gilroy-bold, sans-serif;
-	font-size: 6rem;
+	font-size: 6em;
 	color: var(--color-text2);
 	text-align: center;
 	margin-top: -.5em;
@@ -442,14 +609,18 @@ header section nav.toonMenu {
 
 .homepage section:nth-of-type(5) p {
 	font-family: Gilroy-bold, sans-serif;
-	font-size: 1rem;
+	font-size: 1em;
 	color: var(--color-text2);
 	justify-content: center;
 	text-align: center;
 	margin-top: -6em;
 	width: 65%;
-	margin-left: 6.5em;
 	margin-bottom: 4em;
+}
+
+.homepage main > section:nth-of-type(5) p em {
+	color: var(--color-text3);
+	font-style: normal;
 }
 
 .homepage section:nth-of-type(5) a {
@@ -458,20 +629,26 @@ header section nav.toonMenu {
 	text-decoration: none;
 	text-transform: uppercase;
 	font-family: Gilroy-semibold, sans-serif;
-	font-size: .8rem;
-	background-color: white;
+	font-size: .8em;
+	background-color: var(--color-background3);
 	color: var(--color-text);
 	border-radius: 2em;
 	padding: 1.5em;
 	width: fit-content;
 }
 
+.homepage section:nth-of-type(5) a:hover {
+	background-color: var(--color-background5);
+}
+
+/***************/
 /***************/	
-/* news splash */
+/* NEWS SPLASH */
+/***************/
 /***************/
 
 .homepage section:nth-of-type(6) {
-	background-color: #f4fdff;
+	background-color: var(--color-background6);
 	padding-bottom: 3em;
 }
 
@@ -484,10 +661,10 @@ header section nav.toonMenu {
 	color: var(--color-text);
 }
 
-#answer-to-biggest-question {
+.homepage section:nth-of-type(6) > p {
 	text-align: center;
 	font-family: Gilroy-semibold, sans-serif;
-	font-size: 1rem;
+	font-size: 1em;
 	color: var(--color-text);
 	margin-top: -2em;
 	margin-bottom: 3em;
@@ -501,50 +678,63 @@ header section nav.toonMenu {
 
 .homepage section:nth-of-type(6) article h5 {
 	font-family: Gilroy-bold, sans-serif;
-	font-size: 1.2rem;
+	font-size: 1.2em;
 	color: var(--color-text);
 }
 
 .homepage section:nth-of-type(6) article p {
 	font-family: Gilroy-semibold, sans-serif;
-	font-size: 1rem;
+	font-size: 1em;
 	color: var(--color-text);
 	margin-top: -.8em;
 }
 
 .homepage section:nth-of-type(6) article a {
 	font-family: Gilroy-semibold, sans-serif;
-	font-size: 1rem;
+	font-size: 1em;
 	color: var(--color-text);
 	text-decoration: none;
 }
 
+.homepage section:nth-of-type(6) article a:hover {
+	text-decoration: underline var(--text-decoration-color);
+	text-decoration-thickness: .2em;
+}
+
 .homepage section:nth-of-type(6) section:first-of-type h2 {
 	font-family: Gilroy-bold, sans-serif;
+	width: 90%;
 	padding-left: 0em;
 	padding-right: 0em;
 }
 
 .homepage section:nth-of-type(6) section:first-of-type input{
 	border: none;
-	border-bottom: 1px solid rgb(187, 185, 185);
+	border-bottom: 1px solid rgb(203, 203, 203);
 	display: flex;
 	flex-wrap: wrap;
+	background-color: #f4fdff;
 }
 
 .homepage section:nth-of-type(6) section:first-of-type a {
 	font-family: Gilroy-semibold, sans-serif;
 	text-decoration: none;
 	color: var(--color-text);
-	background-color:#ffea80;
-	font-size: .8rem;
+	background-color: var(--color-background4);
+	font-size: .8em;
 	border-radius: 2em;
 	padding: 1.5em;
 	width: fit-content;
 }
 
+.homepage section:nth-of-type(6) section:first-of-type a:hover {
+	background-color: var(--color-background5);
+}
+
 /**********/	
-/* footer */
+/**********/	
+/* FOOTER */
+/**********/
 /**********/
 
 .homepage footer {
@@ -552,71 +742,76 @@ header section nav.toonMenu {
 	padding: 1em;
 }
 
-.homepage footer details {
+footer details {
 	color: rgb(192, 192, 192);
 	padding-left: 2em;
 	padding-top: 2em;
 	font-family: Gilroy-semibold, sans-serif;
 }
 
-.homepage footer details ul li {
+footer details ul li {
 	list-style-type: none;
 }
 
-.homepage footer details ul li a{
+footer details ul li a{
 	color: var(--color-text);
 	text-decoration: none;
 }
 
-.homepage footer section:first-of-type {
-	padding: 1em;
+footer >  section:first-of-type {
+	padding: 2em;
+	display: flex;
+	flex-direction: column;
+}
+
+footer section:first-of-type > section {
 	display: flex;
 	flex-direction: row;
 }
 
-.homepage footer section:first-of-type section:first-of-type img {
+
+footer section:first-of-type section:first-of-type img {
 	height: 4.9em;
-	width: 2.6em;
+	width: auto;
 	margin-right: 2em;
 }
 
-.homepage footer section:first-of-type section:first-of-type p {
+footer section:first-of-type section:first-of-type p {
 	color: var(--color-text);
 	font-family: Gilroy-semibold, sans-serif;
-	font-size: .9rem;
+	font-size: .9em;
 	width: 50%;
 }
 
-.homepage footer section:first-of-type input {
+footer section:first-of-type input {
 	border: none;
 	border-bottom: 1px solid rgb(187, 185, 185);
 }
 
-.homepage footer section:nth-of-type(2) ul {
+footer section:nth-of-type(2) ul {
 	list-style-type: none;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	justify-content: space-between;
-	width: 55%;
-	margin-left: 6em;
+	gap: .5em;
+	margin: auto;
 }
 
-.homepage footer section:nth-of-type(2) ul li a img {
+footer section:nth-of-type(2) ul li a img {
 	height: 2.6em;
 	width: 2.6em;
 	padding: .3em;
-	background-color:#ffea80;
+	background-color:var(--color-background4);
 	border-radius: 3em;
 }
 
-.homepage footer section:nth-of-type(3) {
+footer section:nth-of-type(3) {
 	padding: 2em;
 }
 
-.homepage footer section:nth-of-type(3) a {
+footer section:nth-of-type(3) a {
 	font-family: Gilroy-semibold, sans-serif;
-	font-size: .9rem;
+	font-size: .9em;
 	color: rgb(192, 192, 192);
 	text-decoration: none;
 	display: flex;
@@ -625,29 +820,626 @@ header section nav.toonMenu {
 }
 
 
-.homepage footer section:nth-of-type(3) p {
+footer section:nth-of-type(3) p {
 	font-family: Gilroy-semibold, sans-serif;
-	font-size: .8rem;
+	font-size: .8em;
 	padding-top: 2em;
 	color: var(--color-text);
 	text-transform: uppercase;
 }
 
-.homepage footer section:nth-of-type(4) {
-	padding-left: .2em;
-	padding-right: 3em;
-	padding-bottom: 2em;
-	margin-top: -1em;
+footer section:nth-of-type(4) {
+	max-width: 80%;
+	margin: 0 auto 2em auto;
 }
 
-.homepage footer section:nth-of-type(4) ul  {
+footer section:nth-of-type(4) ul  {
 	list-style-type: none;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 }
 
-.homepage footer section:nth-of-type(4) ul li img {
+footer section:nth-of-type(4) ul li img {
 	width: 2.3em;
 	height: 2.3em;
+}
+
+
+/*******************/
+/*******************/
+/* HEADER SHOPPAGE */
+/*******************/
+/*******************/
+
+.shoppage header {
+	overflow: hidden;
+}
+
+.shoppage header section:first-of-type {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	position: fixed;
+	right: 0;
+	left: 0;
+	padding: 1em;
+}
+
+.shoppage header section a img {
+	height: 1.7em;
+	width: auto
+}
+
+.shoppage header section nav {
+	background-color: var(--color-background3);
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 1;
+	transform: translateX(100%);
+}
+
+header section nav.toonMenu {
+	transform: translateX(0);
+	height: 100%;
+}
+
+/******************/
+/******************/
+/* HAMBURGER MENU */
+/******************/
+/******************/
+
+.shoppage header section:first-of-type > button{
+	height: 3em;
+	width: 3em;
+}
+
+/*****************************************************************/
+/*****************************************************************/
+/* LINKJES DELIVERY TIME / FREE SHIPPING / RETURNS AND WARRANTY */
+/*****************************************************************/
+/*****************************************************************/
+
+.shoppage header section:nth-of-type(2) {
+	padding-top: 5em;
+	padding-left: 2em;
+	padding-right: 2em;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.shoppage header section:nth-of-type(2) a {
+	padding-right: 1em;
+	font-family: Gilroy-semibold, sans-serif;
+	font-size: .8em;
+	color: var(--color-text);
+	text-decoration: none;
+	padding-bottom: .7em;
+}
+
+.shoppage header section:nth-of-type(2) a span {
+	text-decoration: underline;
+	color: var(--color-text);
+}
+
+.shoppage header section:nth-of-type(2) a:hover,
+.shoppage header section:nth-of-type(2) a:hover span {
+	color: rgb(190, 190, 190);
+}
+
+/*********/
+/*********/
+/* NAV 2 */
+/*********/
+/*********/
+
+.shoppage main {
+	overflow: hidden;
+}
+
+.shoppage main section:first-of-type nav{ 
+	white-space: nowrap;
+	overflow: auto;
+	padding: .5em;
+}
+
+.shoppage main section:first-of-type nav ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 1em;
+}
+
+.shoppage main section:first-of-type nav ul li {
+	list-style-type: none;
+	font-family: Gilroy-semibold, sans-serif;
+}
+
+.shoppage main section:first-of-type nav ul li a{
+	text-decoration: none;
+	color: rgb(190, 190, 190);
+}
+
+.shoppage main section:first-of-type nav ul li a:hover {
+	color: var(--color-text);
+}
+
+/****************************/
+/****************************/
+/* SECTION SHOP ALL BOTTLES */
+/****************************/
+/****************************/
+
+
+/************************/
+/* Geholpen door Robert */
+/************************/
+
+.shoppage main > section:nth-of-type(2) {
+	position: relative;
+	z-index: -1;
+}
+
+.shoppage main > section:nth-of-type(2) img {
+	width: 60vw;
+	object-fit: cover;
+	height: 50vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+}
+
+.shoppage main > section:nth-of-type(2) a {
+	background-color: #004c43;
+	font-family: Gilroy-semibold, sans-serif;
+	font-size: .8em;
+	border-radius: 2em;
+	padding: 1.5em;
+	width: fit-content;
+	text-transform: uppercase;
+	color: var(--color-text2);
+	text-decoration: none;
+	position: absolute;
+	bottom: 2.5em;
+	left: 9em;
+}
+
+
+/*********************************/
+/*********************************/
+/* SECTION PERSONALISE YOUR GIFT */
+/*********************************/
+/*********************************/
+
+.shoppage main > section:nth-of-type(3) {
+	padding-left: 4em;
+	padding-right: 4em;
+	margin-left: 3em;
+	position: relative;
+	z-index: -1;
+}
+
+.shoppage main > section:nth-of-type(3) img {
+	margin-top: -1em;
+}
+
+.shoppage main > section:nth-of-type(3) a {
+	background-color: var(--color-background3);
+	font-family: Gilroy-semibold, sans-serif;
+	font-size: .8em;
+	border-radius: 2em;
+	padding: 1.5em;
+	width: fit-content;
+	text-transform: uppercase;
+	color: var(--color-text);
+	text-decoration: none;
+	position: absolute;
+	bottom: 2em;
+	left: 6em;
+}
+
+/****************************************************/
+/****************************************************/
+/* SECTION FIND A STORE / CONTACT YOUR SUPPORT TEAM */
+/****************************************************/
+/****************************************************/
+
+
+.shoppage main > section:nth-of-type(4) {
+	display: flex;
+	justify-content: center;
+	gap: 1.5em;
+}
+
+.shoppage main > section:nth-of-type(4) a{
+	font-family: Gilroy-semibold, sans-serif;
+	text-decoration: none;
+	color: var(--color-text);
+	display: flex;
+	justify-content: center;
+}
+
+/***********************/
+/***********************/
+/* SECTION OUR BOTTLES */
+/***********************/
+/***********************/
+
+.shoppage main > section:nth-of-type(5) {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.shoppage main section:nth-of-type(5) h2{
+	font-family: Gilroy-bold, sans-serif;
+	font-size: 2em;
+	color: var(--color-text);
+	padding-top: 1.8em;
+}
+
+.shoppage main section:nth-of-type(5) p {
+	font-family: Gilroy-semibold, sans-serif;
+	font-size: 1em;
+	color: var(--color-text);
+	margin-top: -1.7em;
+}
+
+/****************************/
+/****************************/
+/* SECTION SHOP THE BOTTLES */
+/****************************/
+/****************************/
+
+.shoppage main > section:nth-of-type(6) {
+	padding: 1em;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+}
+
+.shoppage main > section:nth-of-type(6) img {
+	padding: 1em;
+}
+
+.shoppage main > section:nth-of-type(6) a {
+	font-family: Gilroy-semibold, sans-serif;
+	color: var(--color-text);
+	text-decoration: none;
+	font-size: 1em;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
+/*background images op de bottles, geholpen door Pip en Robert*/
+
+.shoppage main > section:nth-of-type(6) section:first-of-type:hover,
+.shoppage main > section:nth-of-type(6) section:nth-of-type(2):hover {
+	background-image: url("../images/svgexport-6yellow.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 12em;
+}
+
+.shoppage main > section:nth-of-type(6) section:nth-of-type(3):hover,
+.shoppage main > section:nth-of-type(6) section:nth-of-type(4):hover {
+	background-image: url("../images/svgexport-6purple.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 12em;
+}
+
+.shoppage main > section:nth-of-type(6) section:nth-of-type(5):hover,
+.shoppage main > section:nth-of-type(6) section:nth-of-type(6):hover {
+	background-image: url("../images/svgexport-6blue.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 12em;
+}
+
+.shoppage main > section:nth-of-type(6) img:hover {
+	rotate: -10deg;
+	transition: .3s;
+}
+
+/***********************/
+/***********************/
+/* SECTION ACCESSORIES */
+/***********************/
+/***********************/
+
+.shoppage main > section:nth-of-type(7) {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.shoppage main > section:nth-of-type(7) h2 {
+	font-family: Gilroy-bold, sans-serif;
+	font-size: 2em;
+	color: var(--color-text);
+	padding-top: 1.8em;
+}
+
+.shoppage main > section:nth-of-type(7) p {
+	font-family: Gilroy-semibold, sans-serif;
+	font-size: 1rem;
+	color: var(--color-text);
+	margin-top: -1.7em;
+}
+
+
+/****************************/
+/****************************/
+/* SECTION SHOP ACCESSORIES */
+/****************************/
+/****************************/
+
+/* bron justify-items: https://css-tricks.com/snippets/css/complete-guide-grid/  */
+
+
+.shoppage main > section:nth-of-type(8) {
+	padding: 1em;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	justify-items: center;
+}
+
+.shoppage main > section:nth-of-type(8) img {
+	padding: 1em;
+	max-width: 15em;
+}
+
+.shoppage main > section:nth-of-type(8) img:hover {
+	rotate: -10deg;
+	transition: .3s;
+}
+
+.shoppage main > section:nth-of-type(8) section:first-of-type:hover {
+	background-image: url("../images/svgexport-6darkblue.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 12em;
+}
+
+.shoppage main > section:nth-of-type(8) section:nth-of-type(2):hover {
+	background-image: url("../images/svgexport-6gray.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 12em;
+}
+
+.shoppage main > section:nth-of-type(8) section:nth-of-type(3):hover {
+	background-image: url("../images/svgexport-6lightblue.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 12em;
+} 
+
+.shoppage main > section:nth-of-type(8) a {
+	font-family: Gilroy-semibold, sans-serif;
+	color: var(--color-text);
+	text-decoration: none;
+	font-size: 1em;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
+/* bron grid-column: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column */
+
+.shoppage main > section:nth-of-type(8) section:nth-of-type(3) {
+	grid-column: 1 / span 2;
+}
+
+/***********************/
+/***********************/
+/* SECTION SPARE PARTS */
+/***********************/
+/***********************/
+
+.shoppage main > section:nth-of-type(9) {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.shoppage main > section:nth-of-type(9) h2 {
+	font-family: Gilroy-bold, sans-serif;
+	font-size: 2em;
+	color: var(--color-text);
+	padding-top: 1.8em;
+}
+
+.shoppage main > section:nth-of-type(9) p {
+	font-family: Gilroy-semibold, sans-serif;
+	font-size: 1em;
+	color: var(--color-text);
+	margin-top: -1.7em;
+}
+
+/****************************/
+/****************************/
+/* SECTION SHOP SPARE PARTS */
+/****************************/
+/****************************/
+
+.shoppage main > section:nth-of-type(10) {
+	padding: 1em;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.shoppage main > section:nth-of-type(10) img {
+	padding: 1em;
+}
+
+.shoppage main > section:nth-of-type(10) img:hover {
+	rotate: -10deg;
+	transition: .3s;
+}
+
+.shoppage main > section:nth-of-type(10) section:first-of-type:hover,
+.shoppage main > section:nth-of-type(10) section:nth-of-type(2):hover,
+.shoppage main > section:nth-of-type(10) section:nth-of-type(3):hover,
+.shoppage main > section:nth-of-type(10) section:nth-of-type(4):hover {
+	background-image: url("../images/svgexport-6gray.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 12em;
+}
+
+.shoppage main > section:nth-of-type(10) a {
+	font-family: Gilroy-semibold, sans-serif;
+	color: var(--color-text);
+	text-decoration: none;
+	font-size: 1em;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
+
+/*********/
+/*********/
+/* MEDIA */
+/*********/
+/*********/
+
+@media (min-width: 650px) {
+	.homepage header section:nth-of-type(2) h3 {
+		max-width: 80%;
+	}
+}
+
+@media (min-width: 790px) {
+	.homepage header section:nth-of-type(2) h3 {
+		max-width: 50%;
+		font-size: 1.3em;
+	}
+}
+
+@media (min-width: 790px) {
+	.homepage header section:nth-of-type(2) section {
+		display: flex;
+		flex-direction: row;
+	}
+}
+
+/* Geholpen door Pip Harsveld bron grid-template-columns: https://travishorn.com/responsive-grid-in-2-minutes-with-css-grid-layout-4842a41420fe */
+
+@media (min-width: 790px) {
+	.homepage main section:first-of-type ul {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (min-width: 790px) {
+	.homepage main section:first-of-type ul li {
+		width: 60%;
+	}
+}
+
+@media (min-width: 790px) {
+	.homepage main > section:nth-of-type(2) img {
+		height: 30em;
+		width: auto;
+	}
+}
+
+@media (min-width: 790px) {
+	.homepage main section:nth-of-type(2) section {
+		display: flex;
+		flex-direction: column;
+		align-items: left;
+		justify-content: center;
+		width: 50%;
+	}
+}
+
+@media (min-width: 790px) {
+	.homepage main > section:nth-of-type(2) {
+		display: flex;
+		flex-direction: row-reverse;
+		padding: 3em;
+	}
+}
+
+@media (min-width: 790px) {
+	.homepage section:nth-of-type(3) > section:first-of-type img {
+		height: 35em;
+		width: auto;
+	}
+}
+
+@media (min-width: 790px) {
+	.homepage section:nth-of-type(3) > section:first-of-type {
+		display: flex;
+		flex-direction: row;
+		padding: 3em;
+	}
+}
+
+@media (min-width: 790px) {
+	.homepage section:nth-of-type(3) > section:first-of-type section:first-of-type {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 50%;
+	}
+}
+
+@media (min-width: 790px) {
+	.homepage section:nth-of-type(3) > section:nth-of-type(2) {
+		display: flex;
+		flex-direction: row;
+		padding: 3em;
+		justify-content: center;
+	}
+}
+
+@media (min-width: 790px) {
+	.homepage section:nth-of-type(3) > section:nth-of-type(2) section:nth-of-type(2) {
+		margin-top: 3em;
+		margin-left: -3em;
+		margin-bottom: -3em;
+	}
+}
+
+@media (min-width: 790px) {
+	.homepage section:nth-of-type(5) {
+	   padding: 3em;
+   }
+}
+
+@media (min-width: 1130px) {
+	.homepage header section:nth-of-type(2) h3 {
+		max-width: 40%;
+		font-size: 1.4em;
+	}
+}
+
+@media (min-width: 1130px) {
+	.homepage main section:first-of-type ul {
+		grid-template-columns: repeat(3, 1fr);
+	}
 }
