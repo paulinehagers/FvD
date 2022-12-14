@@ -589,9 +589,7 @@ header section:first-of-type button{
 	text-align: center;
 	color: var(--color-text2);
 	justify-content: center;
-	padding-left: .8em;
-	padding-right: .8em;
-	width: 100%;
+	width: 80%;
 }
 
 .homepage main > section:nth-of-type(5) h2 em {
@@ -655,8 +653,6 @@ header section:first-of-type button{
 .homepage section:nth-of-type(6) h2 {
 	text-align: center;
 	font-family: Gilroy-bold, sans-serif;
-	padding-left: 1em;
-	padding-right: 1em;
 	font-size: 3em;
 	color: var(--color-text);
 }
@@ -713,7 +709,7 @@ header section:first-of-type button{
 	border-bottom: 1px solid rgb(203, 203, 203);
 	display: flex;
 	flex-wrap: wrap;
-	background-color: #f4fdff;
+	background-color: var(--color-background6);
 }
 
 .homepage section:nth-of-type(6) section:first-of-type a {
@@ -758,7 +754,7 @@ footer details ul li a{
 	text-decoration: none;
 }
 
-footer >  section:first-of-type {
+footer > section:first-of-type {
 	padding: 2em;
 	display: flex;
 	flex-direction: column;
@@ -768,7 +764,6 @@ footer section:first-of-type > section {
 	display: flex;
 	flex-direction: row;
 }
-
 
 footer section:first-of-type section:first-of-type img {
 	height: 4.9em;
@@ -818,7 +813,6 @@ footer section:nth-of-type(3) a {
 	flex-direction: column;
 	padding-bottom: 1em;
 }
-
 
 footer section:nth-of-type(3) p {
 	font-family: Gilroy-semibold, sans-serif;
@@ -906,9 +900,8 @@ header section nav.toonMenu {
 
 .shoppage header section:nth-of-type(2) {
 	padding-top: 5em;
-	padding-left: 2em;
-	padding-right: 2em;
-	width: 100%;
+	margin: auto;
+	width: 80%;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -1242,7 +1235,7 @@ header section nav.toonMenu {
 	align-items: center;
 }
 
-/* bron grid-column: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column */
+/* bron grid-column: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column . Zorgt ervoor dat hij in het midden komt te staan*/
 
 .shoppage main > section:nth-of-type(8) section:nth-of-type(3) {
 	grid-column: 1 / span 2;
